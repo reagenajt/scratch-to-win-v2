@@ -9,34 +9,34 @@
 <body>
   <div class="scratch-card">
     <div class="header">
-      <img src="logo.png" alt="A Job Thing Logo" class="logo">
+      <div class="logo">A JOB THING</div>
       <h1>Scratch & Win!</h1>
       <p>Stand a chance to win any of these prizes:</p>
     </div>
-    <ul class="prizes-list">
-      <li>🎉 20% Rebates</li>
-      <li>🎉 10 Free Candidates</li>
-      <li>🎉 RM300 Vouchers</li>
-      <li>Terms & Conditions Apply</li>
-    </ul>
+
+    <div class="promo-text">
+      <p>🎉 20% Rebates</p>
+      <p>🎉 10 Free Candidates</p>
+      <p>🎉 RM300 Vouchers</p>
+      <p><small>Terms & Conditions Apply</small></p>
+    </div>
+
     <canvas id="scratchCard" width="300" height="100"></canvas>
     <div id="prizeContainer" style="display: none;">
-      <p class="prize" id="prizeText"></p>
-      <form id="claimForm" class="claim-form">
-        <h3>Claim Your Prize</h3>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        <label for="phone">Phone:</label>
-        <input type="tel" id="phone" name="phone" required>
-        <label for="company">Company Name:</label>
-        <input type="text" id="company" name="company" required>
-        <button type="submit">Submit</button>
+      <p class="prize" id="prizeText">You won: 🎉 10 Free Candidates!</p>
+    </div>
+
+    <div class="form-container">
+      <h3>Claim Your Prize</h3>
+      <form>
+        <input type="text" placeholder="Name" required>
+        <input type="email" placeholder="Email" required>
+        <input type="tel" placeholder="Phone" required>
+        <input type="text" placeholder="Company Name" required>
+        <input type="submit" value="Submit">
       </form>
     </div>
   </div>
-
   <script src="script.js"></script>
 </body>
 </html>
