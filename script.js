@@ -63,3 +63,24 @@ function revealPrize() {
   canvas.style.display = "none";
   document.getElementById("prizeContainer").style.display = "block";
 }
+
+// Handle form submission
+const claimForm = document.getElementById("claimForm");
+claimForm.addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  // Collect form data
+  const formData = {
+    name: document.getElementById("name").value,
+    email: document.getElementById("email").value,
+    phone: document.getElementById("phone").value,
+    company: document.getElementById("company").value,
+    prize: selectedPrize
+  };
+
+  console.log("Form submitted:", formData);
+
+  // Display thank-you message or redirect
+  alert("Thank you for submitting your details! We'll contact you soon.");
+  claimForm.reset(); // Reset form fields
+});

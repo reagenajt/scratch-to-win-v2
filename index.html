@@ -22,7 +22,18 @@
     <canvas id="scratchCard" width="300" height="100"></canvas>
     <div id="prizeContainer" style="display: none;">
       <p class="prize" id="prizeText"></p>
-      <button onclick="window.location.reload()">Play Again</button>
+      <form id="claimForm" class="claim-form">
+        <h3>Claim Your Prize</h3>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required>
+        <label for="company">Company Name:</label>
+        <input type="text" id="company" name="company" required>
+        <button type="submit">Submit</button>
+      </form>
     </div>
   </div>
 
