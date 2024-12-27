@@ -1,0 +1,64 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+}
+
+.scratch-card {
+  width: 350px;
+  margin: 20px auto;
+  background: linear-gradient(to bottom, #ff0000, #d40000);
+  border: 5px solid #d1a100;
+  border-radius: 10px;
+  color: white;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.header .logo {
+  background: white;
+  color: #d40000;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.header h1 {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.header p {
+  font-size: 18px;
+  margin: 5px 0 10px;
+}
+
+.promo-text {
+  font-size: 14px;
+  margin: 10px 0 20px;
+}
+
+canvas {
+  display: block;
+  margin: 0 auto;
+  background: gold;
+  border-radius: 5px;
+  box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.prize {
+  font-size: 20px;
+  font-weight: bold;
+  color: #4CAF50;
+}
