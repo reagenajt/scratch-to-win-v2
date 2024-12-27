@@ -1,8 +1,8 @@
 // Prizes array
 const prizes = [
-  "20% Discount",
-  "RM10 Zus Coffee Voucher",
-  "10 Candidates Profile"
+  "🎉 20% Rebates",
+  "🎉 10 Free Candidates",
+  "🎉 RM300 Vouchers"
 ];
 
 // Randomly select a prize

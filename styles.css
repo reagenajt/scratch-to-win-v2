@@ -9,7 +9,7 @@ body {
 .scratch-card {
   width: 350px;
   margin: 20px auto;
-  background: linear-gradient(to bottom, #ff0000, #d40000);
+  background: linear-gradient(to bottom, #ff7f00, #ffae42);
   border: 5px solid #d1a100;
   border-radius: 10px;
   color: white;
@@ -23,12 +23,7 @@ body {
 }
 
 .header .logo {
-  background: white;
-  color: #d40000;
-  font-weight: bold;
-  padding: 5px 10px;
-  border-radius: 5px;
-  display: inline-block;
+  max-width: 120px;
   margin-bottom: 10px;
 }
 
@@ -43,9 +38,21 @@ body {
   margin: 5px 0 10px;
 }
 
-.promo-text {
+.prizes-list {
+  text-align: left;
+  margin: 0 auto 20px;
+  padding: 0;
+  list-style: none;
   font-size: 14px;
-  margin: 10px 0 20px;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  border-radius: 5px;
+  max-width: 300px;
+}
+
+.prizes-list li {
+  margin: 5px 0;
 }
 
 canvas {
