@@ -64,3 +64,23 @@ function revealPrize() {
   document.getElementById("prizeContainer").style.display = "block"; // Show the prize message
   document.querySelector(".form-container").style.display = "block"; // Show the form
 }
+
+// Handle form submission
+document.querySelector(".form-container form").addEventListener("submit", function (event) {
+  event.preventDefault(); // Prevent the form from refreshing the page
+
+  // Hide the form
+  document.querySelector(".form-container").style.display = "none";
+
+  // Display the thank you message
+  const thankYouMessage = document.createElement("div");
+  thankYouMessage.innerHTML = `
+    <h3>Thank You!</h3>
+    <p>Your submission has been received. We'll contact you soon to claim your prize.</p>
+  `;
+  thankYouMessage.style.textAlign = "center";
+  thankYouMessage.style.marginTop = "20px";
+  thankYouMessage.style.color = "#4CAF50";
+
+  document.querySelector(".scratch-card").appendChild(thankYouMessage);
+});
