@@ -1,13 +1,13 @@
 // Prizes array
 const prizes = [
-  "🎉 20% Rebates",
-  "🎉 10 Free Candidates",
-  "🎉 RM300 Vouchers"
+  "20% Rebates",
+  "10 Free Candidates",
+  "RM300 Vouchers"
 ];
 
 // Randomly select a prize
 const selectedPrize = prizes[Math.floor(Math.random() * prizes.length)];
-document.getElementById('prizeText').innerText = `🎉 You won: ${selectedPrize} 🎉`;
+document.getElementById('prizeText').innerText = `🎉 You won: ${selectedPrize}!`;
 
 // Set up canvas for scratch card
 const canvas = document.getElementById("scratchCard");
@@ -58,29 +58,9 @@ function checkScratchCompletion() {
   }
 }
 
-// Reveal prize
+// Reveal prize and show the form
 function revealPrize() {
-  canvas.style.display = "none";
-  document.getElementById("prizeContainer").style.display = "block";
+  canvas.style.display = "none"; // Hide the scratch card
+  document.getElementById("prizeContainer").style.display = "block"; // Show the prize message
+  document.querySelector(".form-container").style.display = "block"; // Show the form
 }
-
-// Handle form submission
-const claimForm = document.getElementById("claimForm");
-claimForm.addEventListener("submit", function (e) {
-  e.preventDefault();
-
-  // Collect form data
-  const formData = {
-    name: document.getElementById("name").value,
-    email: document.getElementById("email").value,
-    phone: document.getElementById("phone").value,
-    company: document.getElementById("company").value,
-    prize: selectedPrize
-  };
-
-  console.log("Form submitted:", formData);
-
-  // Display thank-you message or redirect
-  alert("Thank you for submitting your details! We'll contact you soon.");
-  claimForm.reset(); // Reset form fields
-});
